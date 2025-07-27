@@ -1,31 +1,33 @@
-# Implementing-bitwise-operators-and-manipulation-in-c++-program-
+# basics-of-c++-if-else-switch-case-
+Basic C++ Programs
+This repository contains a collection of simple C++ programs designed for beginners. Each program demonstrates a fundamental programming concept, focusing on conditional statements and basic input/output operations.
 
-This program demonstrates how to work directly with the binary representation of numbers using bitwise operators. This is fundamental for low-level programming, optimization, and hardware control.
+Programs Included
+1. Even or Odd Checker
+This program prompts the user to enter an integer and then determines if that number is even or odd.
 
-Core Concepts:
+Concept: Basic if-else statement.
 
-Bitwise Operators: These operators act on individual bits (0s and 1s) of a number.
+Logic: It uses the modulo operator (%) to check if a number is evenly divisible by 2.
 
-& (Bitwise AND): The resulting bit is 1 only if both corresponding bits in the operands are 1.
+2. Vowel or Consonant Checker
+This program asks the user for a single character and identifies whether it is a vowel or a consonant.
 
-| (Bitwise OR): The resulting bit is 1 if at least one of the corresponding bits in the operands is 1.
+Concept: if-else statement with multiple logical OR (||) conditions.
 
-^ (Bitwise XOR): The resulting bit is 1 if the corresponding bits in the operands are different.
+Logic: It checks the input character against all lowercase and uppercase vowels.
 
-~ (Bitwise NOT): Inverts all the bits of the operand (0s become 1s and 1s become 0s).
+3. Largest of Three Numbers
+This program takes three integer inputs from the user and finds the largest number among them.
 
-<< (Left Shift): Shifts the bits of the operand to the left by a specified number of positions. Each shift to the left is equivalent to multiplying the number by 2.
+Concept: if-else if-else ladder.
 
->> (Right Shift): Shifts the bits of the operand to the right. Each shift to the right is equivalent to dividing the number by 2.
+Logic: It sequentially compares the three numbers to determine the greatest one.
 
-Bit Manipulation with Masks: To change a specific bit, we use a "mask". A mask is a specially crafted number that allows us to target a single bit without affecting others.
+4. Simple Menu with Switch-Case
+This program displays a menu and, based on the user's choice, prints specific employee information.
 
-Creating a Mask: The expression (1 << bit_position) creates the mask. It takes the number 1 (binary ...0001) and shifts its single '1' bit to the left to the desired position. For example, 1 << 2 results in binary ...0100 (the number 4).
+Concept: switch-case statement.
 
-Setting a Bit: To force a specific bit to become 1, we use the OR operator with a mask.
+Logic: It uses a switch statement to execute a specific block of code corresponding to the user's input. A default case handles invalid choices.
 
-Example: a | (1 << bit_set) takes the original number a and ORs it with the mask. This sets the target bit to 1 and leaves all other bits in a unchanged.
-
-Resetting (Clearing) a Bit: To force a specific bit to become 0, we use the AND operator with an inverted mask.
-
-Example: a & (~(1 << reset)) first creates the mask (1 << reset), then inverts it with ~. The inverted mask has a 0 at the target position and 1s everywhere else. ANDing this with the original number a clears the target bit and leaves all other bits unchanged.
