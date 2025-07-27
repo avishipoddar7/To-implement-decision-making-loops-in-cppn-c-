@@ -1,4 +1,4 @@
-# Implementing-bitwise-operators-and-manipulation-in-c-program-
+# Implementing-bitwise-operators-and-manipulation-in-c++-program-
 
 This program demonstrates how to work directly with the binary representation of numbers using bitwise operators. This is fundamental for low-level programming, optimization, and hardware control.
 
