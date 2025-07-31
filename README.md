@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # basics-of-c++-if-else-switch-case-
 Basic C++ Programs
 This repository contains a collection of simple C++ programs designed for beginners. Each program demonstrates a fundamental programming concept, focusing on conditional statements and basic input/output operations.
@@ -92,5 +92,5 @@ Here is a summary of what each file does:
 
 
 
->>>>>>> c34dd633162c03feae6357af9676e6738babdbbd
+
 
