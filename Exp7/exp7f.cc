@@ -9,7 +9,7 @@ int main() {
     string name;
 
     cout << "Enter a string: ";
-    cin >> name; // takes input until first space
+    cin >> name; 
 
     cout << "You entered: " << name << endl;
 

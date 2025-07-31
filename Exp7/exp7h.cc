@@ -7,6 +7,7 @@ int main (){
     string a ; 
     cout<<"Enter a string: ";
     cin>>a;
+    
     int n = a.length();
     cout<<"The lenght of the string is "<<n<<endl ;
 
